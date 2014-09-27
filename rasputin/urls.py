@@ -29,5 +29,5 @@ urlpatterns = patterns('',
     url(r'^avatar/', include('avatar.urls')),
 
     # Your stuff: custom urls go here
-
+    (r'^dal/', include('dal.urls', namespace='dal')),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
