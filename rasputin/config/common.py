@@ -112,7 +112,7 @@ class Common(Configuration):
 
     # DATABASE CONFIGURATION
     # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
-    DATABASES = values.DatabaseURLValue('postgres://localhost/rasputin')
+    DATABASES = values.DatabaseURLValue('postgres://rasputin:password@localhost/rasputin')
     # END DATABASE CONFIGURATION
 
     # CACHING
