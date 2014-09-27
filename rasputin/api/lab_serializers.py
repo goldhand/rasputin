@@ -10,3 +10,4 @@ class LabReportSerializer(serializers.ModelSerializer):
                   "thc", "thc_a", "thc_v", "cbd", "cbd_a", "cbd_v", "cbc", 
                   "cbg", "cbn", "max_thc", "max_cbd", "total_active", 
                   "total_cannabinoids",)
+        read_only_fields = ("lab",)
