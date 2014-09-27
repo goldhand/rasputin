@@ -1,6 +1,5 @@
 
 from tastypie.utils.timezone import now
-from django.contrib.auth.models import User
 from django.db import models
 from django.utils.text import slugify
 
@@ -10,7 +9,7 @@ class LabReport(models.Model):
     ('mg', 'Millagrams'),
     ('pc', 'Percent'),
     )
-
+    lab = models.ForeignKey("labs.Lab")
     customer_id = models.CharField(max_length=200, blank=True)
     sample_name = models.CharField(max_length=200, blank=True)
     test_id = models.CharField(max_length=200, blank=True)
