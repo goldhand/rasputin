@@ -43,13 +43,15 @@ class Common(Configuration):
         'allauth.account',  # registration
         'allauth.socialaccount',  # registration
         'tastypie', # restful api
+        'rest_framework',
+        #'rest_framework.authtoken',
     )
 
     # Apps specific for this project go here.
     LOCAL_APPS = (
         'users',  # custom users app'
         # Your stuff: custom apps go here
-        'dal',
+        'reports',
         'labs',
     )
 

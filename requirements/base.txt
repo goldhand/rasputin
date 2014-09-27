@@ -35,3 +35,4 @@ django-avatar==2.0
 
 #django tastypi for restful api 
 django-tastypie==0.12.0
+djangorestframework==2.4.3
