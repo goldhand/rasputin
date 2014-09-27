@@ -50,6 +50,7 @@ class Common(Configuration):
         'users',  # custom users app'
         # Your stuff: custom apps go here
         'dal',
+        'labs',
     )
 
     # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
