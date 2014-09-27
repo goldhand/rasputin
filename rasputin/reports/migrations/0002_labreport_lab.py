@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('labs', '0001_initial'),
-        ('dal', '0001_initial'),
+        ('reports', '0001_initial'),
     ]
 
     operations = [
