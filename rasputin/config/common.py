@@ -42,12 +42,14 @@ class Common(Configuration):
         'allauth',  # registration
         'allauth.account',  # registration
         'allauth.socialaccount',  # registration
+        'tastypie', # restful api
     )
 
     # Apps specific for this project go here.
     LOCAL_APPS = (
-        'users',  # custom users app
+        'users',  # custom users app'
         # Your stuff: custom apps go here
+        'dal',
     )
 
     # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

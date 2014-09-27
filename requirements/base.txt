@@ -33,4 +33,5 @@ django-autoslug==1.7.2
 django-avatar==2.0
 
 
-# Your custom requirements go here
+#django tastypi for restful api 
+django-tastypie==0.12.0
