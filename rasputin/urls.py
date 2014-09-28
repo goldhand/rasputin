@@ -31,4 +31,5 @@ urlpatterns = patterns('',
     # Your stuff: custom urls go here
     (r'^reports/', include('reports.urls', namespace='reports')),
     (r'^api/', include('api.urls', namespace='api')),
+    (r'^labs/', include('labs.urls', namespace='labs')),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

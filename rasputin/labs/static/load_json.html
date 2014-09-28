@@ -1,0 +1,68 @@
+<html>
+<head>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+
+var myEvent  = { data : [
+{
+"CUSTOMER_ID": "yourIdhere",
+"SAMPLE_NAME":"Truffles 2 x 50 ",
+"TEST_ID":"104905",
+"SAMPLE_TYPE":"Edible",
+"BATCH":"R1068",
+"TEST_DATE":"14.05.10",
+"EXPIRES_DATE":"14.07.09",
+"UNITS": "mg",
+"THC":"81.96",
+"THC-A":"3.48",
+"THC-V":"0.28",
+"CBD":"0.00",
+"CBD-A":"0.00",
+"CBD-V":"0.00",
+"CBC":"1.78",
+"CBG":"0.71",
+"CBN":"0.24",
+"MAX_THC":"85.02",
+"MAX_CBD":"0.00",
+"TOTAL_ACTIVE":"84.97",
+"TOTAL_CANNABINOIDS":"88.46" },
+{
+"CUSTOMER_ID": "yourIdhere2",
+"SAMPLE_NAME":"Truffles 2 x 50 ",
+"TEST_ID":"104905",
+"SAMPLE_TYPE":"Edible",
+"BATCH":"R1068",
+"TEST_DATE":"14.05.10",
+"EXPIRES_DATE":"14.07.09",
+"UNITS": "mg",
+"THC":"81.96",
+"THC-A":"3.48",
+"THC-V":"0.28",
+"CBD":"0.00",
+"CBD-A":"0.00",
+"CBD-V":"0.00",
+"CBC":"1.78",
+"CBG":"0.71",
+"CBN":"0.24",
+"MAX_THC":"85.02",
+"MAX_CBD":"0.00",
+"TOTAL_ACTIVE":"84.97",
+"TOTAL_CANNABINOIDS":"88.46" }]
+}
+
+
+$.ajax({
+    url: '/labs/event/load_json/',
+    type: 'POST',
+    contentType: 'application/json; charset=utf-8',
+    data: JSON.stringify(myEvent),
+    dataType: 'text',
+    success: function(result) {
+        $('body').text(result);
+    }
+});
+</script>
+<body>
+loading
+</body>
+</html>
