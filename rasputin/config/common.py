@@ -271,3 +271,28 @@ class Common(Configuration):
     # END LOGGING CONFIGURATION
 
     # Your common stuff: Below this line define 3rd party libary settings
+    ########## Your common stuff: Below this line define 3rd party libary settings
+    REST_FRAMEWORK = {
+    #    'PAGINATE_BY': 10,                 # Default to 10
+    #    'PAGINATE_BY_PARAM': 'page_size',  # Allow client to override, using `?page_size=xxx`.
+    #    'MAX_PAGINATE_BY': 100             # Maximum limit allowed when using `?page_size=xxx`.
+    #}
+        'DEFAULT_FILTER_BACKENDS': (
+                                'rest_framework.filters.DjangoFilterBackend',
+                                'rest_framework.filters.SearchFilter'),
+    #    'DEFAULT_THROTTLE_CLASSES': (
+    #        'rest_framework.throttling.AnonRateThrottle',
+    #        'rest_framework.throttling.UserRateThrottle'
+    #    ),
+    #    'DEFAULT_THROTTLE_RATES': {
+    #        'anon': '10/day', #second, minute, hour, day
+    #        'user': '1000/day'
+    #    }
+        'DEFAULT_PERMISSION_CLASSES': (
+                               'rest_framework.permissions.IsAuthenticated',),
+        
+        'DEFAULT_AUTHENTICATION_CLASSES': (
+                       'rest_framework.authentication.TokenAuthentication',
+                       'rest_framework.authentication.BasicAuthentication',
+                       'rest_framework.authentication.SessionAuthentication',)
+    }

@@ -40,6 +40,3 @@ class Dev(Common):
         'SHOW_TEMPLATE_CONTEXT': True,
     }
     # end django-debug-toolbar
-
-    # Your local stuff: Below this line define 3rd party libary settings
-    DATABASES = values.DatabaseURLValue('postgres://rasputin:password@localhost/rasputin')

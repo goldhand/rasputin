@@ -19,6 +19,7 @@ class LabReportViewSet(ModelViewSet):
     '''
     model = LabReport
     serializer_class = LabReportSerializer
+    filter_fields = ('customer_id',)
 
     
     def pre_save(self, obj):
